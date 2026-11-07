@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<title>抖漫工作室-动漫创作团队_作品风格_最新动态与社区讨论</title>
+<meta name="description" content="抖漫工作室是专注原创动漫与短剧创作的团队，本页聚合其代表作风格、最新更新、制作团队解析、观众评论与常见问答，帮助动漫爱好者快速了解工作室动态与作品特色，提供收藏与追更指引。">
+<meta name="keywords" content="抖漫工作室,动漫创作团队,原创动漫作品,抖漫动态,动漫工作室推荐">
+<style>
+:root{
+  --bg:#f7f8fc;
+  --surface:#ffffff;
+  --text:#1d232b;
+  --text-secondary:#4a5568;
+  --muted:#6b7280;
+  --border:#e9ecf2;
+  --shadow:0 8px 24px rgba(0,0,0,0.04),0 1px 3px rgba(0,0,0,0.03);
+  --shadow-hover:0 16px 32px rgba(0,0,0,0.08);
+  --radius:16px;
+  --radius-sm:10px;
+  --accent:#5b6cf0;
+  --accent-soft:#eef0ff;
+  --accent-gradient:linear-gradient(135deg,#5b6cf0 0%,#8b5cf6 100%);
+  --tag-bg:#f1f3f9;
+  --max-width:1200px;
+  --font-sans:'Inter','PingFang SC','Microsoft YaHei',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font-sans);
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+.container{max-width:var(--max-width);margin:0 auto;padding:0 24px}
+
+/* 导航 */
+.nav{background:rgba(255,255,255,0.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:50}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.25rem;letter-spacing:-0.02em}
+.logo-badge{background:var(--accent-gradient);color:#fff;width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700}
+.nav-links{display:flex;gap:6px;flex-wrap:wrap}
+.nav-links a{padding:8px 14px;border-radius:999px;font-size:0.92rem;color:var(--text-secondary);transition:0.2s;font-weight:500}
+.nav-links a:hover{background:var(--accent-soft);color:var(--accent)}
+.nav-search{display:flex;align-items:center;gap:8px;background:var(--tag-bg);border-radius:999px;padding:6px 14px;border:1px solid transparent;transition:0.2s}
+.nav-search:focus-within{border-color:var(--accent);background:#fff}
+.nav-search input{border:none;background:transparent;outline:none;font-size:0.9rem;width:160px;color:var(--text)}
+.nav-search button{border:none;background:var(--accent);color:#fff;border-radius:999px;padding:6px 14px;font-size:0.82rem;font-weight:600;cursor:pointer;transition:0.2s}
+.nav-search button:hover{opacity:0.88}
+
+/* 通用section */
+.section{padding:56px 0}
+.section-header{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:28px;flex-wrap:wrap;gap:8px}
+.section-header h2{font-size:1.65rem;font-weight:700;letter-spacing:-0.02em;position:relative;padding-left:14px}
+.section-header h2::before{content:'';position:absolute;left:0;top:8px;bottom:8px;width:4px;border-radius:4px;background:var(--accent-gradient)}
+.section-header .more{font-size:0.88rem;color:var(--accent);font-weight:600;transition:0.2s}
+.section-header .more:hover{opacity:0.7}
+
+/* Banner */
+.banner{
+  background:linear-gradient(145deg,#f0f2ff 0%,#fafbff 60%,#f3f0ff 100%);
+  border-radius:var(--radius);
+  padding:48px 40px;
+  margin-top:28px;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  position:relative;
+  overflow:hidden;
+}
+.banner::after{
+  content:'';
+  position:absolute;right:-60px;top:-60px;width:280px;height:280px;
+  background:radial-gradient(circle,rgba(91,108,240,0.12) 0%,transparent 70%);
+  border-radius:50%;
+  pointer-events:none;
+}
+.banner h1{font-size:2.5rem;font-weight:800;letter-spacing:-0.03em;line-height:1.2;max-width:780px}
+.banner h1 span{color:var(--accent)}
+.banner-desc{font-size:1.05rem;color:var(--text-secondary);max-width:660px;line-height:1.7}
+.banner-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.banner-actions a{padding:10px 22px;border-radius:999px;font-size:0.92rem;font-weight:600;transition:0.2s;background:#fff;border:1px solid var(--border);color:var(--text-secondary)}
+.banner-actions a.primary{background:var(--accent-gradient);color:#fff;border:none;box-shadow:0 4px 14px rgba(91,108,240,0.3)}
+.banner-actions a:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.banner-search{display:flex;gap:8px;background:#fff;border-radius:999px;padding:6px 6px 6px 20px;max-width:520px;border:1px solid var(--border);margin-top:6px;box-shadow:var(--shadow)}
+.banner-search input{flex:1;border:none;outline:none;font-size:0.95rem;background:transparent;color:var(--text)}
+.banner-search button{background:var(--accent-gradient);color:#fff;border:none;border-radius:999px;padding:10px 24px;font-weight:600;font-size:0.9rem;cursor:pointer;transition:0.2s;white-space:nowrap}
+.banner-search button:hover{opacity:0.9}
+
+/* 卡片网格 */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+
+.card{
+  background:var(--surface);
+  border-radius:var(--radius);
+  padding:22px;
+  box-shadow:var(--shadow);
+  border:1px solid var(--border);
+  transition:0.25s ease;
+}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+.card-title{font-size:1.08rem;font-weight:700;margin-bottom:8px;line-height:1.4}
+.card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.tag{background:var(--tag-bg);color:var(--text-secondary);font-size:0.75rem;padding:3px 10px;border-radius:999px;font-weight:500}
+.tag.accent{background:var(--accent-soft);color:var(--accent)}
+.card-desc{font-size:0.88rem;color:var(--muted);line-height:1.6;margin-bottom:14px}
+.card-meta{display:flex;gap:14px;font-size:0.8rem;color:var(--muted);align-items:center;flex-wrap:wrap}
+.card-meta strong{color:var(--text);font-weight:600}
+
+/* 列表样式 */
+.list-item{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--border);align-items:flex-start}
+.list-item:last-child{border-bottom:none}
+.list-num{font-size:1.1rem;font-weight:800;color:var(--accent);min-width:28px}
+.list-content{flex:1}
+.list-content h3{font-size:1rem;font-weight:700;margin-bottom:4px}
+.list-content p{font-size:0.86rem;color:var(--muted);line-height:1.55}
+.list-meta{font-size:0.78rem;color:var(--muted);white-space:nowrap;margin-left:auto;padding-left:12px}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cat-item{background:var(--surface);border-radius:var(--radius-sm);padding:18px 16px;text-align:center;border:1px solid var(--border);transition:0.2s;box-shadow:var(--shadow);cursor:pointer}
+.cat-item:hover{background:var(--accent-soft);border-color:var(--accent);transform:translateY(-2px)}
+.cat-item .cat-icon{font-size:1.6rem;margin-bottom:6px}
+.cat-item .cat-name{font-size:0.9rem;font-weight:600;color:var(--text-secondary)}
+
+/* 深度解析 */
+.article-body{background:var(--surface);border-radius:var(--radius);padding:36px 40px;box-shadow:var(--shadow);border:1px solid var(--border)}
+.article-body h3{font-size:1.25rem;font-weight:700;margin:28px 0 12px;color:var(--text)}
+.article-body h3:first-child{margin-top:0}
+.article-body p{font-size:0.96rem;color:var(--text-secondary);line-height:1.85;margin-bottom:14px}
+.article-body .highlight{background:var(--accent-soft);border-left:3px solid var(--accent);padding:14px 20px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;margin:18px 0;font-size:0.92rem;color:var(--text)}
+
+/* FAQ */
+.faq-item{border:1px solid var(--border);border-radius:var(--radius-sm);margin-bottom:12px;background:var(--surface);overflow:hidden;transition:0.2s}
+.faq-item:hover{border-color:var(--accent)}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;font-weight:600;font-size:0.98rem;cursor:pointer;gap:12px}
+.faq-q .plus{color:var(--accent);font-size:1.2rem;transition:0.2s;flex-shrink:0}
+.faq-a{padding:0 22px 18px;font-size:0.9rem;color:var(--text-secondary);line-height:1.75;display:none}
+.faq-item.open .faq-a{display:block}
+.faq-item.open .plus{transform:rotate(45deg)}
+
+/* 评论 */
+.comment-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.comment-card{background:var(--surface);border-radius:var(--radius-sm);padding:18px 20px;border:1px solid var(--border);box-shadow:var(--shadow);transition:0.2s}
+.comment-card:hover{box-shadow:var(--shadow-hover)}
+.comment-head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.avatar{width:34px;height:34px;border-radius:50%;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.8rem;color:var(--accent);flex-shrink:0}
+.comment-name{font-size:0.88rem;font-weight:600}
+.comment-time{font-size:0.75rem;color:var(--muted);margin-left:auto}
+.comment-text{font-size:0.88rem;color:var(--text-secondary);line-height:1.65}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.news-card{background:var(--surface);border-radius:var(--radius-sm);padding:22px;border:1px solid var(--border);box-shadow:var(--shadow);transition:0.2s}
+.news-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.news-date{font-size:0.78rem;color:var(--accent);font-weight:600;margin-bottom:6px}
+.news-title{font-size:1rem;font-weight:700;margin-bottom:8px;line-height:1.4}
+.news-summary{font-size:0.85rem;color:var(--muted);line-height:1.6}
+
+/* 页脚 */
+.footer{background:#1a1f2b;color:#b0b8c4;padding:48px 0 32px;margin-top:40px}
+.footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px}
+.footer h4{color:#fff;font-size:0.95rem;margin-bottom:14px;font-weight:600}
+.footer p{font-size:0.85rem;line-height:1.7;color:#8e97a5}
+.footer a{display:block;font-size:0.85rem;color:#8e97a5;padding:4px 0;transition:0.2s}
+.footer a:hover{color:#fff}
+.footer-bottom{border-top:1px solid #2a3140;margin-top:32px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:0.78rem;color:#6b7588}
+.footer-bottom a{display:inline;padding:0;color:#6b7588}
+.footer-bottom a:hover{color:#fff}
+
+/* 响应式 */
+@media (max-width:1024px){
+  .grid-4{grid-template-columns:repeat(2,1fr)}
+  .grid-3{grid-template-columns:repeat(2,1fr)}
+  .news-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .cat-grid{grid-template-columns:repeat(4,1fr)}
+}
+@media (max-width:768px){
+  .container{padding:0 16px}
+  .banner{padding:32px 22px}
+  .banner h1{font-size:1.8rem}
+  .nav-links{display:none}
+  .nav-search input{width:100px}
+  .grid-3,.grid-4,.grid-2{grid-template-columns:1fr}
+  .news-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+  .article-body{padding:24px 20px}
+  .comment-grid{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr}
+  .section{padding:36px 0}
+  .section-header h2{font-size:1.3rem}
+  .list-item{flex-wrap:wrap}
+  .list-meta{margin-left:0;padding-left:0}
+  .banner-actions a{padding:8px 16px;font-size:0.85rem}
+}
+@media (max-width:480px){
+  .banner h1{font-size:1.5rem}
+  .banner-search{flex-direction:column;padding:12px}
+  .banner-search button{width:100%}
+  .cat-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 导航 -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="/#home" class="logo">
+      <span class="logo-badge">抖</span>
+      <span>抖漫工作室</span>
+    </a>
+    <nav class="nav-links">
+      <a href="/#works">作品库</a>
+      <a href="/#updates">最新更新</a>
+      <a href="/#analysis">深度解析</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#comments">社区评论</a>
+      <a href="/#news">资讯动态</a>
+    </nav>
+    <div class="nav-search">
+      <input type="search" placeholder="搜索作品或话题..." aria-label="搜索">
+      <button>搜索</button>
+    </div>
+  </div>
+</header>
+
+<!-- 首屏Banner -->
+<section id="home" class="container">
+  <div class="banner">
+    <h1>抖漫工作室 · 原创动漫与短剧的<span>创作现场</span></h1>
+    <p class="banner-desc">聚合抖漫工作室旗下原创动画、微短剧、角色企划与幕后制作故事。从风格解析到更新追踪，从观众讨论到推荐片单，这里是了解抖漫创作脉络的第一站。</p>
+    <div class="banner-actions">
+      <a href="/#works" class="primary">浏览代表作品</a>
+      <a href="/#updates">查看最新更新</a>
+      <a href="/#analysis">了解创作风格</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#comments">观众评论</a>
+      <a href="/#news">资讯速递</a>
+    </div>
+    <form class="banner-search" onsubmit="return false;">
+      <input type="search" placeholder="搜索抖漫工作室作品、角色或制作团队..." aria-label="站内搜索">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</section>
+
+<!-- 内容简介 -->
+<section class="section container">
+  <div class="section-header">
+    <h2>关于抖漫工作室</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;" class="intro-grid">
+    <div class="card" style="padding:28px;">
+      <p style="font-size:0.96rem;color:var(--text-secondary);line-height:1.85;margin-bottom:14px;">抖漫工作室是一支活跃在原创动画与微短剧领域的创作团队，作品覆盖奇幻、校园、轻科幻与日常治愈等题材。工作室以“快节奏叙事+鲜明角色”为特色，在短视频平台与动漫社区中积累了大量年轻观众。</p>
+      <p style="font-size:0.96rem;color:var(--text-secondary);line-height:1.85;margin-bottom:14px;">如果你习惯用碎片时间追更，或者想系统了解抖漫工作室的创作序列，这个页面正好适合你。我们从代表作、更新节奏、角色设定、制作团队、观众反馈等维度，整理了一份可随时查阅的“抖漫档案”。</p>
+      <p style="font-size:0.96rem;color:var(--text-secondary);line-height:1.85;">页面内容会随作品上线持续补充，建议收藏，方便在通勤、午休或睡前快速翻看最新动态。</p>
+    </div>
+    <div class="card" style="padding:28px;display:flex;flex-direction:column;justify-content:center;gap:16px;">
+      <div style="display:flex;align-items:center;gap:14px;">
+        <div style="background:var(--accent-soft);border-radius:12px;padding:12px 16px;flex:1;text-align:center;">
+          <div style="font-size:1.6rem;font-weight:800;color:var(--accent);">12+</div>
+          <div style="font-size:0.8rem;color:var(--muted);">原创作品</div>
+        </div>
+        <div style="background:var(--accent-soft);border-radius:12px;padding:12px 16px;flex:1;text-align:center;">
+          <div style="font-size:1.6rem;font-weight:800;color:var(--accent);">3</div>
+          <div style="font-size:0.8rem;color:var(--muted);">制作线并行</div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:14px;">
+        <div style="background:var(--accent-soft);border-radius:12px;padding:12px 16px;flex:1;text-align:center;">
+          <div style="font-size:1.6rem;font-weight:800;color:var(--accent);">48h</div>
+          <div style="font-size:0.8rem;color:var(--muted);">平均更新间隔</div>
+        </div>
+        <div style="background:var(--accent-soft);border-radius:12px;padding:12px 16px;flex:1;text-align:center;">
+          <div style="font-size:1.6rem;font-weight:800;color:var(--accent);">2.3w</div>
+          <div style="font-size:0.8rem;color:var(--muted);">社区讨论热度</div>
+        </div>
+      </div>
+      <p style="font-size:0.82rem;color:var(--muted);text-align:center;">数据为站内模拟，仅供参考</p>
+    </div>
+  </div>
+</section>
+
+<!-- 热门推荐 -->
+<section id="works" class="section container">
+  <div class="section-header">
+    <h2>热门作品推荐</h2>
+    <a href="/#works" class="more">查看全部 →</a>
+  </div>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-tags"><span class="tag accent">奇幻</span><span class="tag">校园</span><span class="tag">轻喜剧</span></div>
+      <h3 class="card-title">《灵域快递站》</h3>
+      <p class="card-desc">抖漫工作室人气连载，讲述少女意外继承通往异界的快递站，每集解决一个“非人类”的包裹难题，笑点与治愈并存。</p>
+      <div class="card-meta"><span>评分 <strong>9.2</strong></span><span>更新至 <strong>18集</strong></span><span>热度 <strong>8.9w</strong></span></div>
+    </div>
+    <div class="card">
+      <div class="card-tags"><span class="tag accent">科幻</span><span class="tag">悬疑</span><span class="tag">短剧</span></div>
+      <h3 class="card-title">《记忆修正师》</h3>
+      <p class="card-desc">近未来设定，主角能进入他人记忆修改细节，却在一次委托中发现自己的过去被人动过手脚。每集8分钟，反转密集。</p>
+      <div class="card-meta"><span>评分 <strong>8.9</strong></span><span>更新至 <strong>12集</strong></span><span>热度 <strong>6.5w</strong></span></div>
+    </div>
+    <div class="card">
+      <div class="card-tags"><span class="tag accent">日常</span><span class="tag">治愈</span><span class="tag">美食</span></div>
+      <h3 class="card-title">《深夜食堂的猫》</h3>
+      <p class="card-desc">一家只在凌晨营业的小店，老板是一只穿围裙的猫。每集一道菜、一个客人的心事，节奏舒缓，适合睡前放松。</p>
+      <div class="card-meta"><span>评分 <strong>9.4</strong></span><span>更新至 <strong>24集</strong></span><span>热度 <strong>10.1w</strong></span></div>
+    </div>
+    <div class="card">
+      <div class="card-tags"><span class="tag accent">热血</span><span class="tag">竞技</span><span class="tag">群像</span></div>
+      <h3 class="card-title">《机甲少年团》</h3>
+      <p class="card-desc">五位少年在废弃工厂中组装机甲参加地下联赛，成长线清晰，战斗作画流畅，是抖漫工作室制作规格较高的一部长篇。</p>
+      <div class="card-meta"><span>评分 <strong>8.7</strong></span><span>更新至 <strong>26集</strong></span><span>热度 <strong>7.8w</strong></span></div>
+    </div>
+    <div class="card">
+      <div class="card-tags"><span class="tag accent">古风</span><span class="tag">言情</span><span class="tag">微短剧</span></div>
+      <h3 class="card-title">《画屏春》</h3>
+      <p class="card-desc">画师与将军的跨时空通信，每集3分钟，以屏风为媒介展开一段错位情缘。画面配色雅致，台词精炼。</p>
+      <div class="card-meta"><span>评分 <strong>8.5</strong></span><span>更新至 <strong>20集</strong></span><span>热度 <strong>5.2w</strong></span></div>
+    </div>
+    <div class="card">
+      <div class="card-tags"><span class="tag accent">搞笑</span><span class="tag">职场</span><span class="tag">吐槽</span></div>
+      <h3 class="card-title">《妖怪人力公司》</h3>
+      <p class="card-desc">妖怪们也要上班打卡、写周报、卷KPI。抖漫工作室用荒诞设定映射职场日常，弹幕互动率极高。</p>
+      <div class="card-meta"><span>评分 <strong>9.0</strong></span><span>更新至 <strong>15集</strong></span><span>热度 <strong>9.3w</strong></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 最新更新 -->
+<section id="updates" class="section container">
+  <div class="section-header">
+    <h2>最新更新与热播动态</h2>
+    <span style="font-size:0.82rem;color:var(--muted);">截止 2026年11月7日</span>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 40px;" class="updates-grid">
+    <div>
+      <div class="list-item"><span class="list-num">01</span><div class="list-content"><h3>《灵域快递站》第18集上线</h3><p>新包裹来自“时间裂缝”，收件人竟是十年前的自己。</p></div><span class="list-meta">11月7日</span></div>
+      <div class="list-item"><span class="list-num">02</span><div class="list-content"><h3>《记忆修正师》第12集（季终）</h3><p>主角在记忆迷宫中找到关键证据，第二季已进入剧本阶段。</p></div><span class="list-meta">11月6日</span></div>
+      <div class="list-item"><span class="list-num">03</span><div class="list-content"><h3>《深夜食堂的猫》第24集更新</h3><p>本集客人是位失眠的漫画家，菜单为“热牛奶配蜂蜜吐司”。</p></div><span class="list-meta">11月5日</span></div>
+      <div class="list-item"><span class="list-num">04</span><div class="list-content"><h3>《机甲少年团》第26集：联赛开幕</h3><p>主角团首次对战卫冕冠军，战斗场面长达6分钟。</p></div><span class="list-meta">11月4日</span></div>
+    </div>
+    <div>
+      <div class="list-item"><span class="list-num">05</span><div class="list-content"><h3>《画屏春》第20集：屏风重启</h3><p>将军终于看到画师留下的第二幅屏风，剧情进入高潮。</p></div><span class="list-meta">11月3日</span></div>
+      <div class="list-item"><span class="list-num">06</span><div class="list-content"><h3>《妖怪人力公司》第15集</h3><p>年度绩效面谈，妖怪们集体摆烂，笑点密集。</p></div><span class="list-meta">11月2日</span></div>
+      <div class="list-item"><span class="list-num">07</span><div class="list-content"><h3>抖漫工作室新企划预告</h3><p>官方发布15秒概念短片，新作疑似与“梦境”有关。</p></div><span class="list-meta">11月1日</span></div>
+      <div class="list-item"><span class="list-num">08</span><div class="list-content"><h3>《灵域快递站》角色人气投票结果</h3><p>站长助理“小夜”以微弱优势获得第一。</p></div><span class="list-meta">10月30日</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 分类入口 -->
+<section class="section container">
+  <div class="section-header">
+    <h2>按类型浏览</h2>
+  </div>
+  <div class="cat-grid">
+    <a href="/#works" class="cat-item"><div class="cat-icon">✨</div><div class="cat-name">奇幻冒险</div></a>
+    <a href="/#works" class="cat-item"><div class="cat-icon">🤖</div><div class="cat-name">科幻悬疑</div></a>
+    <a href="/#works" class="cat-item"><div class="cat-icon">🍜</div><div class="cat-name">日常治愈</div></a>
+    <a href="/#works" class="cat-item"><div class="cat-icon">⚔️</div><div class="cat-name">热血竞技</div></a>
+    <a href="/#works" class="cat-item"><div class="cat-icon">🏮</div><div class="cat-name">古风言情</div></a>
+    <a href="/#works" class="cat-item"><div class="cat-icon">😹</div><div class="cat-name">搞笑吐槽</div></a>
+    <a href="/#works" class="cat-item"><div class="cat-icon">🎬</div><div class="cat-name">微短剧</div></a>
+    <a href="/#works" class="cat-item"><div class="cat-icon">🎨</div><div class="cat-name">实验短片</div></a>
+  </div>
+</section>
+
+<!-- 深度解析 -->
+<section id="analysis" class="section container">
+  <div class="section-header">
+    <h2>深度解析：抖漫工作室的创作方法论</h2>
+  </div>
+  <div class="article-body">
+    <h3>从短视频到系列化：节奏与辨识度</h3>
+    <p>抖漫工作室最初以短视频动画进入观众视野，擅长在极短篇幅内完成“设定—冲突—反转”的叙事闭环。这种训练让团队对节奏非常敏感：大部分作品单集控制在3-8分钟，前15秒一定给出核心信息或视觉钩子，结尾保留一个可讨论的悬念。对于习惯倍速观看的年轻观众来说，这种密度恰好匹配碎片化场景。</p>
+    <p>但短并不等于薄。以《灵域快递站》为例，每集围绕一个“包裹”展开，表面是奇幻单元剧，实际在铺垫主角与异界之间的深层关联。抖漫工作室习惯用轻喜剧包裹长线伏笔，让观众在追更过程中逐渐拼出完整世界观。</p>
+
+    <h3>角色设计：高辨识度与情感锚点</h3>
+    <p>抖漫工作室的角色设计有几个明显倾向：一是轮廓鲜明，色彩区块清晰，适合在移动端小屏幕上快速识别；二是性格标签与视觉特征强绑定，比如《深夜食堂的猫》中老板的围裙和半睁眼表情，几乎不需要台词就能传递“慵懒但可靠”的气质。三是重视配角生态，几乎每部作品都有2-3个高人气配角，在社区中衍生出大量二创和讨论。</p>
+    <div class="highlight">如果你是第一次接触抖漫工作室，建议从《深夜食堂的猫》或《妖怪人力公司》入手——这两部对路人观众最友好，单元结构清晰，不需要补前情。</div>
+
+    <h3>制作团队与视觉风格</h3>
+    <p>抖漫工作室公开信息显示，团队核心成员来自动画、插画和短视频内容领域，因此作品在分镜上带有明显的“信息流”特征：镜头切换快、特写多、字幕与音效配合紧密。色彩上偏好低饱和背景搭配高饱和角色，既保证画面耐看，又让主体突出。在《机甲少年团》中能看到更接近传统番剧的作画投入，战斗场面的运镜和特效层次明显高于日常系作品。</p>
+
+    <h3>适合谁看，以及搜索这个词的人通常想了解什么</h3>
+    <p>搜索“抖漫工作室”的用户大致分为几类：想找新番代餐的动漫爱好者、在短视频平台刷到片段后想系统补剧的观众、关注国产原创动画动态的从业者，以及想了解角色设定和幕后故事的核心粉丝。这个页面覆盖了代表作列表、更新状态、风格解析和社区评论，正好对应上述需求。如果你只想快速判断是否合口味，看“热门作品推荐”和“最新更新”两个板块即可；如果想深入了解创作思路，可以从深度解析和FAQ读起。</p>
+    <p>与同类小型工作室相比，抖漫工作室的优势在于稳定的更新节奏和较强的角色运营意识，短板则是在长篇叙事上仍在积累经验。不过从近两年的作品来看，团队正在尝试更复杂的剧情结构，值得持续关注。</p>
+  </div>
+</section>
+
+<!-- 体验指南 -->
+<section class="section container">
+  <div class="section-header">
+    <h2>浏览与追更指南</h2>
+  </div>
+  <div class="grid-3">
+    <div class="card">
+      <h3 class="card-title">📱 移动端优先</h3>
+      <p class="card-desc">页面针对手机阅读做了优化，通勤路上可以快速浏览更新列表和短评，无需反复缩放。</p>
+    </div>
+    <div class="card">
+      <h3 class="card-title">🔖 收藏与追踪</h3>
+      <p class="card-desc">建议收藏本页，抖漫工作室新作上线、集数更新和社区热议话题都会在这里汇总。</p>
+    </div>
+    <div class="card">
+      <h3 class="card-title">🧭 推荐路径</h3>
+      <p class="card-desc">新观众可以从“热门作品推荐”进入，再顺着“深度解析”了解风格，最后看“观众评论”判断是否合口味。</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section container">
+  <div class="section-header">
+    <h2>常见问题</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q">抖漫工作室有哪些代表作品？<span class="plus">+</span></div>
+      <div class="faq-a">目前讨论度较高的包括《灵域快递站》《记忆修正师》《深夜食堂的猫》《机甲少年团》《画屏春》和《妖怪人力公司》。其中《深夜食堂的猫》偏治愈日常，《记忆修正师》偏悬疑短剧，《机甲少年团》制作规格较高，可以根据自己喜欢的类型选择第一部。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">第一次看抖漫工作室的作品，推荐从哪部开始？<span class="plus">+</span></div>
+      <div class="faq-a">如果喜欢轻松治愈，优先《深夜食堂的猫》；如果喜欢快节奏反转，选《记忆修正师》；想看热血战斗可以从《机甲少年团》入手。想全面了解工作室风格，建议先看《灵域快递站》，它在喜剧和长线叙事之间平衡得比较好。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">抖漫工作室的更新频率是怎样的？<span class="plus">+</span></div>
+      <div class="faq-a">根据本页整理的信息，工作室采用多线并行制作，不同作品更新节奏略有差异，常见为周更或双周更，短剧类作品有时会更密集。具体更新日期可以关注“最新更新”板块，页面会随官方发布持续调整。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">这些作品在哪里可以观看？<span class="plus">+</span></div>
+      <div class="faq-a">抖漫工作室的作品主要分布在主流短视频平台和部分动漫社区，具体播出渠道因作品而异。本页不提供直接播放链接，但会在资讯和更新板块标注上线动态，方便你按名称搜索。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">抖漫工作室的作品适合哪些年龄段？<span class="plus">+</span></div>
+      <div class="faq-a">整体偏向青少年和年轻成人观众，题材以奇幻、校园、职场吐槽和轻科幻为主，没有过度暴力或成人内容。日常治愈类作品也适合喜欢轻松氛围的成年观众。个别悬疑作品有轻微紧张情节，建议根据个人接受度选择。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">页面上的评分和热度是官方数据吗？<span class="plus">+</span></div>
+      <div class="faq-a">本页评分、热度和更新集数均为站内模拟展示，用于帮助读者快速建立印象，并非官方实时数据。实际数据请以抖漫工作室官方账号或播出平台显示为准。我们会在资讯板块尽量同步官方动态。</div>
+    </div>
+  </div>
+</section>
+
+<!-- 用户评论 -->
+<section id="comments" class="section container">
+  <div class="section-header">
+    <h2>观众怎么说</h2>
+    <span style="font-size:0.82rem;color:var(--muted);">以下为模拟社区评论</span>
+  </div>
+  <div class="comment-grid">
+    <div class="comment-card"><div class="comment-head"><div class="avatar">小</div><span class="comment-name">小夜不熬夜</span><span class="comment-time">11月7日</span></div><div class="comment-text">《灵域快递站》第18集太戳了，那个“寄给十年前的自己”的包裹设定直接泪目。抖漫工作室写单元剧真的有一手。</div></div>
+    <div class="comment-card"><div class="comment-head"><div class="avatar">机</div><span class="comment-name">机甲迷阿哲</span><span class="comment-time">11月6日</span></div><div class="comment-text">《机甲少年团》最新一集战斗作画明显升级，分镜有剧场版的感觉。就是文戏稍微拖了一点，希望后续保持节奏。</div></div>
+    <div class="comment-card"><div class="comment-head"><div class="avatar">猫</div><span class="comment-name">猫饭团</span><span class="comment-time">11月5日</span></div><div class="comment-text">《深夜食堂的猫》我已经安利给全宿舍了，每集一道菜一个故事，睡前看真的很治愈。猫老板的配音也太合适了。</div></div>
+    <div class="comment-card"><div class="comment-head"><div class="avatar">记</div><span class="comment-name">记忆碎片</span><span class="comment-time">11月5日</span></div><div class="comment-text">《记忆修正师》季终集挖的坑有点大，第二季要等多久啊。不过抖漫工作室做悬疑短剧确实比很多同类用心，至少逻辑能自洽。</div></div>
+    <div class="comment-card"><div class="comment-head"><div class="avatar">画</div><span class="comment-name">画屏春不春</span><span class="comment-time">11月4日</span></div><div class="comment-text">古风短剧里《画屏春》的画面质感算很能打了，屏风转场的设计很有想法。就是每集太短，刚入戏就结束了。</div></div>
+    <div class="comment-card"><div class="comment-head"><div class="avatar">妖</div><span class="comment-name">妖怪打工人</span><span class="comment-time">11月3日</span></div><div class="comment-text">《妖怪人力公司》完全是我的电子榨菜，周报那集笑到拍桌子。抖漫工作室吐槽职场是认真的，建议继续保持。</div></div>
+    <div class="comment-card"><div class="comment-head"><div class="avatar">路</div><span class="comment-name">路人丙</span><span class="comment-time">11月2日</span></div><div class="comment-text">说实话之前没听过抖漫工作室，刷到片段才找过来的。页面整理得挺清楚，补番顺序和更新都有，省得我自己去翻动态。</div></div>
+    <div class="comment-card"><div class="comment-head"><div class="avatar">作</div><span class="comment-name">作画监督厨</span><span class="comment-time">11月1日</span></div><div class="comment-text">从制作角度说，抖漫工作室在短视频动画里算中上水准，角色色指定很统一。希望新企划能在动作戏上再多投入一点。</div></div>
+    <div class="comment-card"><div class="comment-head"><div class="avatar">追</div><span class="comment-name">追更小能手</span><span class="comment-time">10月31日</span></div><div class="comment-text">同时追三部抖漫的剧，更新日历对我很重要。这个页面的更新列表如果能加个提醒功能就更好了。</div></div>
+    <div class="comment-card"><div class="comment-head"><div class="avatar">治</div><span class="comment-name">治愈系患者</span><span class="comment-time">10月30日</span></div><div class="comment-text">《深夜食堂的猫》24集了质量一直很稳，没有强行煽情，这点很难得。抖漫工作室做日常系比做热血系更让我惊喜。</div></div>
+    <div class="comment-card"><div class="comment-head"><div class="avatar">数</div><span class="comment-name">数据党老K</span><span class="comment-time">10月29日</span></div><div class="comment-text">观察了一下，抖漫工作室的作品在短视频平台完播率普遍不错，前15秒钩子确实做得好。不过长视频平台的观众可能需要更多铺垫。</div></div>
+    <div class="comment-card"><div class="comment-head"><div class="avatar">新</div><span class="comment-name">新入坑的</span><span class="comment-time">10月28日</span></div><div class="comment-text">刚看完《灵域快递站》，想问一下有没有类似设定的推荐？页面上同类推荐要是能再丰富一点就好了。</div></div>
+  </div>
+</section>
+
+<!-- 相关资讯 -->
+<section id="news" class="section container">
+  <div class="section-header">
+    <h2>抖漫资讯速递</h2>
+  </div>
+  <div class="news-grid">
+    <div class="news-card">
+      <div class="news-date">2026年11月7日</div>
+      <h3 class="news-title">抖漫工作室发布新企划概念短片，梦境题材引猜测</h3>
+      <p class="news-summary">15秒短片中出现漂浮的门和时钟，官方仅配文“下一个入口”。社区推测可能与《记忆修正师》共享世界观。</p>
+    </div>
+    <div class="news-card">
+      <div class="news-date">2026年11月5日</div>
+      <h3 class="news-title">《灵域快递站》角色人气投票结果公布，小夜登顶</h3>
+      <p class="news-summary">站长助理“小夜”以32%得票率获得第一，官方发布感谢绘。第二名和第三名分别是主角和异界邮差。</p>
+    </div>
+    <div class="news-card">
+      <div class="news-date">2026年11月3日</div>
+      <h3 class="news-title">《记忆修正师》季终，第二季剧本进入打磨阶段</h3>
+      <p class="news-summary">导演在社交平台表示第二季会解释第一季留下的所有伏笔，并加入新角色。上线时间未定。</p>
+    </div>
+    <div class="news-card">
+      <div class="news-date">2026年10月31日</div>
+      <h3 class="news-title">《深夜食堂的猫》推出联名食谱，收录12道剧中料理</h3>
+      <p class="news-summary">抖漫工作室与美食博主合作，将动画中的菜品还原为可操作食谱，首批赠品在社区活动中发放。</p>
+    </div>
+    <div class="news-card">
+      <div class="news-date">2026年10月28日</div>
+      <h3 class="news-title">《机甲少年团》确定参加年底动画展，现场放映未公开片段</h3>
+      <p class="news-summary">官方确认将参展12月的线下动画展，展台设有机甲模型展示和声优互动环节，具体时间表待公布。</p>
+    </div>
+    <div class="news-card">
+      <div class="news-date">2026年10月25日</div>
+      <h3 class="news-title">抖漫工作室开通制作幕后专栏，首期讲分镜流程</h3>
+      <p class="news-summary">新栏目“抖漫制作现场”上线，第一期以《画屏春》为例拆解从脚本到分镜的流程，适合对动画制作感兴趣的观众。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <span class="logo-badge" style="background:var(--accent-gradient);">抖</span>
+          <span style="color:#fff;font-weight:700;font-size:1.1rem;">抖漫工作室</span>
+        </div>
+        <p>关注原创动漫与微短剧创作现场。本页面为品牌内容聚合展示，所有作品信息、评分、评论均为站内模拟或整理，仅供浏览参考。</p>
+      </div>
+      <div>
+        <h4>站内导航</h4>
+        <a href="/#works">热门作品</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#analysis">深度解析</a>
+        <a href="/#faq">常见问题</a>
+      </div>
+      <div>
+        <h4>内容分类</h4>
+        <a href="/#works">奇幻冒险</a>
+        <a href="/#works">科幻悬疑</a>
+        <a href="/#works">日常治愈</a>
+        <a href="/#works">微短剧</a>
+      </div>
+      <div>
+        <h4>社区</h4>
+        <a href="/#comments">观众评论</a>
+        <a href="/#news">资讯动态</a>
+        <a href="#">友情链接（占位）</a>
+        <a href="#">合作联系（占位）</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 抖漫工作室内容专题页 · 模拟展示站</span>
+      <span>免责声明：本页为内容聚合与SEO演示页面，与抖漫工作室官方无直接关联。作品名称、数据、评论均为虚构或整理，请以官方信息为准。</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // FAQ手风琴
+  document.querySelectorAll('.faq-q').forEach(function(q){
+    q.addEventListener('click',function(){
+      var item=this.parentElement;
+      item.classList.toggle('open');
+    });
+  });
+</script>
+</body>
+  </html>
