@@ -1,0 +1,1013 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>九九美剧-最新美剧在线观看_美剧推荐与追剧指南</title>
+  <meta name="description" content="九九美剧专题页提供最新美剧资讯、高分剧集推荐、深度解析与追剧指南。涵盖热门美剧、经典老剧、演员动态与播出时间，助你快速找到想看的九九美剧，享受沉浸式追剧体验。">
+  <meta name="keywords" content="九九美剧,美剧推荐,最新美剧,美剧在线观看,追剧指南">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230d1f3e'/%3E%3Ctext x='50' y='68' font-size='48' text-anchor='middle' fill='%23f3b33d' font-family='Arial'%3E99%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #f8fafd;
+      --surface: #ffffff;
+      --surface-soft: #f0f4fa;
+      --text-main: #0b1a2e;
+      --text-secondary: #3f556b;
+      --text-muted: #6b7e94;
+      --accent: #1f4a8a;
+      --accent-light: #eef4ff;
+      --accent-warm: #e8a33d;
+      --border: #dce3ec;
+      --shadow-sm: 0 4px 12px rgba(0, 20, 50, 0.04);
+      --shadow-md: 0 12px 28px rgba(0, 20, 50, 0.08);
+      --radius-card: 18px;
+      --radius-sm: 10px;
+      --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* 导航 */
+    .navbar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+      background: rgba(255, 255, 255, 0.88);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: -0.02em;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .logo-badge {
+      background: var(--accent);
+      color: #fff;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: 800;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-secondary);
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+      padding: 4px 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    /* Banner */
+    .hero {
+      background: linear-gradient(135deg, #ffffff 0%, #f5f9ff 100%);
+      border-radius: 0 0 32px 32px;
+      padding: 52px 0 48px;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      color: var(--text-main);
+      margin-bottom: 16px;
+    }
+
+    .hero-content h1 span {
+      color: var(--accent);
+      background: linear-gradient(120deg, #1f4a8a 0%, #3a6fc4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+      max-width: 550px;
+    }
+
+    .search-hero {
+      display: flex;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 60px;
+      padding: 6px 6px 6px 20px;
+      box-shadow: var(--shadow-sm);
+      align-items: center;
+      margin-bottom: 28px;
+      max-width: 500px;
+    }
+
+    .search-hero input {
+      border: none;
+      outline: none;
+      font-size: 1rem;
+      flex: 1;
+      background: transparent;
+      color: var(--text-main);
+      padding: 10px 0;
+    }
+
+    .search-hero input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 40px;
+      padding: 12px 28px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      text-decoration: none;
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    .btn-primary:hover {
+      background: #15396b;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+    }
+
+    .hero-tags a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      background: #ffffffcc;
+      padding: 6px 16px;
+      border-radius: 40px;
+      border: 1px solid var(--border);
+      transition: all 0.2s;
+      font-weight: 500;
+    }
+
+    .hero-tags a:hover {
+      background: var(--accent-light);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .hero-visual {
+      background: linear-gradient(145deg, #dce7f9, #b7cef0);
+      border-radius: 28px;
+      padding: 24px;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-height: 220px;
+      justify-content: center;
+    }
+
+    .hero-visual .tagline {
+      font-weight: 700;
+      color: #0b1a2e;
+      font-size: 1.3rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-visual .mini-grid {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .mini-grid span {
+      background: #ffffffb8;
+      border-radius: 30px;
+      padding: 6px 16px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #1a3f6e;
+      backdrop-filter: blur(2px);
+    }
+
+    /* 通用section */
+    .section {
+      margin-bottom: 56px;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .section-header h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+    }
+
+    .section-header .more-link {
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    /* 卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .media-card {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      padding: 20px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .media-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .card-tag {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .media-card h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 12px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .card-desc {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+      flex: 1;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .card-tags span {
+      background: var(--surface-soft);
+      padding: 4px 10px;
+      border-radius: 30px;
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+
+    /* 最新更新列表 */
+    .update-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+
+    .update-item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      padding: 16px 22px;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+      transition: background 0.15s;
+      gap: 16px;
+    }
+
+    .update-item:last-child {
+      border-bottom: none;
+    }
+
+    .update-item:hover {
+      background: var(--accent-light);
+    }
+
+    .update-name {
+      font-weight: 600;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .update-name .badge {
+      font-size: 0.65rem;
+      background: var(--accent-warm);
+      color: #fff;
+      padding: 2px 10px;
+      border-radius: 30px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .update-time {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    /* 分类入口 */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .cat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px 18px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-main);
+      text-decoration: none;
+      transition: all 0.2s;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .cat-card:hover {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    /* 深度解析 */
+    .deep-dive {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      padding: 36px 40px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 56px;
+    }
+
+    .deep-dive h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      letter-spacing: -0.02em;
+    }
+
+    .deep-dive p {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+
+    .deep-dive strong {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    /* FAQ */
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .faq-card {
+      background: var(--surface);
+      border-radius: var(--radius-sm);
+      padding: 20px 24px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text-main);
+    }
+
+    .faq-card p {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* 评论 */
+    .comment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .comment-card {
+      background: var(--surface);
+      border-radius: var(--radius-sm);
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .comment-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .comment-user {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--text-main);
+    }
+
+    .comment-date {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .comment-text {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    /* 资讯 */
+    .news-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .news-card {
+      background: var(--surface);
+      border-radius: var(--radius-sm);
+      padding: 24px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .news-date {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .news-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .news-card p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    /* 页脚 */
+    .footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 40px 0 32px;
+      margin-top: 32px;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 0.9rem;
+    }
+
+    .footer-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    .copyright {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* 响应式 */
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .hero-content h1 {
+        font-size: 2.4rem;
+      }
+
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .faq-grid,
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .deep-dive {
+        padding: 24px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .hero {
+        padding: 32px 0 28px;
+      }
+
+      .update-item {
+        grid-template-columns: 1fr;
+        gap: 6px;
+        padding: 16px;
+      }
+
+      .category-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 导航 -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="/#hero" class="logo">
+        <span class="logo-badge">99</span>
+        九九美剧
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/#hero">首页</a></li>
+          <li><a href="/#recommend">热门推荐</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#categories">分类</a></li>
+          <li><a href="/#deep-dive">深度解析</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">剧迷评论</a></li>
+          <li><a href="/#news">资讯</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 首屏 Banner -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1>九九美剧<br><span>发现好剧，追剧不迷路</span></h1>
+        <p class="hero-desc">
+          从高分神作到新剧速递，九九美剧为你整理值得熬夜刷完的剧集清单，提供深度解析与播出日历，让每一次追剧都有迹可循。
+        </p>
+        <div class="search-hero">
+          <input type="text" placeholder="搜索剧名、演员或类型…" aria-label="搜索美剧">
+          <button class="btn-primary">搜剧</button>
+        </div>
+        <div class="hero-tags">
+          <a href="/#recommend">本周热门</a>
+          <a href="/#updates">今日更新</a>
+          <a href="/#categories">悬疑犯罪</a>
+          <a href="/#categories">科幻奇幻</a>
+          <a href="/#categories">喜剧生活</a>
+          <a href="/#deep-dive">高分经典</a>
+          <a href="/#news">新剧速递</a>
+          <a href="/#faq">追剧指南</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="tagline">九九美剧 · 今日热榜</div>
+        <div class="mini-grid">
+          <span>《最后生还者》S2</span>
+          <span>《怪奇物语》最终季</span>
+          <span>《白莲花度假村》S3</span>
+          <span>《继承之战》全季</span>
+          <span>《熊家餐馆》S4</span>
+        </div>
+        <p style="font-size: 0.9rem; color: #1a3f6e; margin-top: 12px;">每日更新 · 编辑精选 · 剧迷共评</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- 内容简介 -->
+    <section class="section" id="intro">
+      <div class="deep-dive" style="background: var(--surface);">
+        <h2>九九美剧 · 你的私人美剧指南</h2>
+        <p>
+          九九美剧是一个专注于美剧内容聚合与深度推荐的专题页面。无论你是刚入坑的美剧新人，还是阅剧无数的老饕，这里都能帮你快速找到符合口味的高质量剧集。我们围绕“九九美剧”这一核心主题，整理了热门榜单、最新更新、类型分类以及深度解析，让你不再为“剧荒”发愁。
+        </p>
+        <p>
+          为什么要关注九九美剧？因为美剧市场每年产出数百部新剧，质量参差不齐，时间成本极高。九九美剧通过编辑筛选和用户反馈，将真正值得观看的作品呈现出来。从悬疑烧脑到温情喜剧，从科幻史诗到真实事件改编，你可以在九九美剧找到清晰的分类入口和详细的剧集看点。同时，我们提供了FAQ和用户评论区，帮助你解决追剧过程中的常见疑问，并看到其他观众的实时反馈。
+        </p>
+        <p>
+          喜欢深度内容的观众还可以在“深度解析”板块读到关于剧集叙事、角色弧光、制作背景的详细分析，让观看体验不止于剧情本身。九九美剧页面设计简洁，移动端适配良好，适合收藏为浏览器书签，随时查看最新动态。
+        </p>
+      </div>
+    </section>
+
+    <!-- 热门内容推荐 -->
+    <section class="section" id="recommend">
+      <div class="section-header">
+        <h2>🔥 热门推荐 · 大家都在看</h2>
+        <a href="/#updates" class="more-link">查看全部 →</a>
+      </div>
+      <div class="card-grid">
+        <div class="media-card">
+          <div class="card-tag">HBO Max</div>
+          <h3>最后生还者 第二季</h3>
+          <div class="card-meta"><span>2025 · 剧情/冒险</span><span>⭐ 9.2</span></div>
+          <p class="card-desc">乔尔与艾莉的故事继续，末日下的情感羁绊更加虐心，第七集封神。</p>
+          <div class="card-tags"><span>末世</span><span>游戏改编</span><span>高分</span></div>
+        </div>
+        <div class="media-card">
+          <div class="card-tag">Netflix</div>
+          <h3>怪奇物语 最终季</h3>
+          <div class="card-meta"><span>2025 · 科幻/恐怖</span><span>⭐ 9.0</span></div>
+          <p class="card-desc">霍金斯小镇终极一战，所有谜团即将揭晓，准备好纸巾。</p>
+          <div class="card-tags"><span>80年代</span><span>超自然</span><span>情怀</span></div>
+        </div>
+        <div class="media-card">
+          <div class="card-tag">HBO</div>
+          <h3>白莲花度假村 第三季</h3>
+          <div class="card-meta"><span>2025 · 剧情/悬疑</span><span>⭐ 8.8</span></div>
+          <p class="card-desc">全新度假地泰国，阶级讽刺依旧辛辣，首集就埋下谋杀伏笔。</p>
+          <div class="card-tags"><span>讽刺</span><span>群像</span><span>悬疑</span></div>
+        </div>
+        <div class="media-card">
+          <div class="card-tag">FX</div>
+          <h3>熊家餐馆 第四季</h3>
+          <div class="card-meta"><span>2025 · 喜剧/剧情</span><span>⭐ 9.1</span></div>
+          <p class="card-desc">卡米和团队冲击米其林，厨房焦虑升级，但依然治愈。</p>
+          <div class="card-tags"><span>美食</span><span>治愈</span><span>职场</span></div>
+        </div>
+        <div class="media-card">
+          <div class="card-tag">Apple TV+</div>
+          <h3>人生切割术 第二季</h3>
+          <div class="card-meta"><span>2025 · 科幻/惊悚</span><span>⭐ 8.7</span></div>
+          <p class="card-desc">卢蒙公司的秘密进一步揭开，工作与生活的切割走向失控。</p>
+          <div class="card-tags"><span>反乌托邦</span><span>职场</span><span>烧脑</span></div>
+        </div>
+        <div class="media-card">
+          <div class="card-tag">Amazon</div>
+          <h3>辐射 第二季</h3>
+          <div class="card-meta"><span>2025 · 科幻/废土</span><span>⭐ 8.5</span></div>
+          <p class="card-desc">废土世界继续扩张，露西与尸鬼的旅程充满黑色幽默。</p>
+          <div class="card-tags"><span>游戏改编</span><span>废土</span><span>冒险</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 最新更新 -->
+    <section class="section" id="updates">
+      <div class="section-header">
+        <h2>📅 最新更新 · 追更日历</h2>
+        <a href="/#news" class="more-link">更多动态 →</a>
+      </div>
+      <div class="update-list">
+        <div class="update-item">
+          <div class="update-name">《最后生还者》S2 <span class="badge">新集</span></div>
+          <div class="update-time">2026-11-07 · 第4集已上线</div>
+        </div>
+        <div class="update-item">
+          <div class="update-name">《怪奇物语》最终季 <span class="badge">新集</span></div>
+          <div class="update-time">2026-11-06 · 第7集（上）</div>
+        </div>
+        <div class="update-item">
+          <div class="update-name">《白莲花度假村》S3</div>
+          <div class="update-time">2026-11-05 · 第3集上线</div>
+        </div>
+        <div class="update-item">
+          <div class="update-name">《熊家餐馆》S4</div>
+          <div class="update-time">2026-11-04 · 全季释出</div>
+        </div>
+        <div class="update-item">
+          <div class="update-name">《人生切割术》S2</div>
+          <div class="update-time">2026-11-03 · 第9集</div>
+        </div>
+        <div class="update-item">
+          <div class="update-name">《辐射》S2</div>
+          <div class="update-time">2026-11-02 · 第5集</div>
+        </div>
+        <div class="update-item">
+          <div class="update-name">《继承之战》衍生剧</div>
+          <div class="update-time">2026-11-01 · 官宣定档2027</div>
+        </div>
+        <div class="update-item">
+          <div class="update-name">《黄石》第五季下半部</div>
+          <div class="update-time">2026-10-30 · 第9集</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 分类入口 -->
+    <section class="section" id="categories">
+      <div class="section-header">
+        <h2>🎭 按类型找剧</h2>
+      </div>
+      <div class="category-grid">
+        <a href="/#recommend" class="cat-card">悬疑犯罪</a>
+        <a href="/#recommend" class="cat-card">科幻奇幻</a>
+        <a href="/#recommend" class="cat-card">喜剧生活</a>
+        <a href="/#recommend" class="cat-card">剧情正剧</a>
+        <a href="/#recommend" class="cat-card">恐怖惊悚</a>
+        <a href="/#recommend" class="cat-card">历史传记</a>
+        <a href="/#recommend" class="cat-card">青春校园</a>
+        <a href="/#recommend" class="cat-card">动画成人向</a>
+      </div>
+    </section>
+
+    <!-- 深度解析 -->
+    <section class="deep-dive" id="deep-dive">
+      <h2>🎬 深度解析 · 为什么这些美剧值得看</h2>
+      <p>
+        <strong>九九美剧</strong>的编辑团队在筛选剧集时，不仅关注热度，更看重叙事完整度和角色塑造。以近期大热的《最后生还者》第二季为例，剧集在保留游戏核心情感的基础上，拓展了配角的故事线，使得末日背景下的人性抉择更加立体。这种改编思路让非玩家观众也能沉浸其中，而原作粉丝则能发现新的细节彩蛋。如果你在搜索“九九美剧”，很可能正在寻找这类兼具口碑与话题性的作品。
+      </p>
+      <p>
+        <strong>类型化与融合趋势</strong>是近年美剧的一大特点。纯喜剧或纯悬疑的边界越来越模糊，《熊家餐馆》用喜剧外壳包裹职场创伤，《白莲花度假村》在度假喜剧中植入社会批判。九九美剧在分类时保留了这些复合标签，方便你按“喜剧+悬疑”“剧情+美食”等组合筛选。在深度解析中，我们会拆解剧集的叙事节奏、镜头语言和配乐风格，帮助你在观看前建立合理预期。
+      </p>
+      <p>
+        <strong>角色分析</strong>是九九美剧深度内容的重点。无论是《继承之战》中罗伊家族的权力博弈，还是《人生切割术》里马克的人格分裂，我们都会从人物动机和成长弧光出发，提供不同于短评的视角。许多观众在看完解析后二刷，会发现之前忽略的伏笔和隐喻。页面中的人物关系图谱和名场面回顾，正是为了满足这种深度消费需求。
+      </p>
+      <p>
+        <strong>观看顺序与消费建议</strong>：如果你是初次接触美剧，建议从每部剧的第一季第一集开始，避免跳跃观看。九九美剧的推荐卡片中标注了“适合新人”或“需前作基础”的提示。对于长篇剧集，我们提供了“必看集数”和“可跳过集数”的参考，但依然建议完整观看以获得最佳体验。在移动端，你可以利用碎片时间追更，但悬疑剧最好留出连续时间。
+      </p>
+      <p>
+        <strong>同类内容比较</strong>方面，九九美剧会定期推出“同题材对决”专题，例如“三部科幻新剧横向对比”“律政剧经典与新生代”。这些内容帮助你在有限时间内做出选择。此外，我们关注播出平台差异：HBO的剧集往往制作精良但节奏偏慢，Netflix则偏向快节奏和大众化，Apple TV+注重概念和视觉。了解这些倾向，能让你更高效地找到符合自己口味的作品。
+      </p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="section-header">
+        <h2>❓ 常见问题</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-card">
+          <h3>九九美剧是什么？</h3>
+          <p>九九美剧是一个专注于美剧推荐与内容聚合的静态专题页面，提供热门剧集榜单、最新更新、分类筛选和深度解析，帮助美剧爱好者高效发现好剧。</p>
+        </div>
+        <div class="faq-card">
+          <h3>怎么在九九美剧找到适合入门的剧？</h3>
+          <p>建议从“热门推荐”中评分较高且标注“新人友好”的剧集开始，例如《熊家餐馆》《怪奇物语》。你也可以在分类里选择“喜剧生活”或“青春校园”，这类剧集节奏轻松、入门门槛低。</p>
+        </div>
+        <div class="faq-card">
+          <h3>九九美剧的更新频率如何？</h3>
+          <p>页面会同步主要平台的美剧播出时间，通常每日更新热门剧集的最新集数信息。对于周播剧，更新日期会显示在“追更日历”中，方便你规划观看时间。</p>
+        </div>
+        <div class="faq-card">
+          <h3>深度解析会剧透吗？</h3>
+          <p>深度解析模块主要围绕剧集背景、角色分析和制作特点展开，不会透露关键情节转折。但在具体剧集条目中，可能会有轻度剧透提示，请留意阅读提示。</p>
+        </div>
+        <div class="faq-card">
+          <h3>如何判断一部剧是否适合自己？</h3>
+          <p>你可以参考卡片上的类型标签、评分以及简短看点。如果喜欢快节奏，选择带有“悬疑”“惊悚”标签的剧集；如果偏爱慢热治愈，可以关注“剧情”“生活”类。评论区也能看到真实观众反馈。</p>
+        </div>
+        <div class="faq-card">
+          <h3>九九美剧会推荐老剧吗？</h3>
+          <p>会的。除了新剧，我们也会定期推荐经典高分老剧，例如《绝命毒师》《火线》《黑道家族》等，并在深度解析中说明其历史地位和观看价值。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 用户评论 -->
+    <section class="section" id="comments">
+      <div class="section-header">
+        <h2>💬 剧迷热评</h2>
+      </div>
+      <div class="comment-grid">
+        <div class="comment-card">
+          <div class="comment-head"><span class="comment-user">追剧小能手</span><span class="comment-date">2026-11-06</span></div>
+          <p class="comment-text">《最后生还者》第二季第四集哭死我了，九九美剧的更新提醒很及时，每次都能第一时间看到。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-head"><span class="comment-user">科幻迷阿杰</span><span class="comment-date">2026-11-05</span></div>
+          <p class="comment-text">怪奇物语最终季质量在线，就是等得太煎熬。希望九九美剧多出点幕后解析。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-head"><span class="comment-user">白莲花观察员</span><span class="comment-date">2026-11-04</span></div>
+          <p class="comment-text">第三季的镜头语言太绝了，每一帧都能当壁纸。九九美剧的深度解析写得不错。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-head"><span class="comment-user">厨房焦虑症</span><span class="comment-date">2026-11-03</span></div>
+          <p class="comment-text">熊家餐馆第四季还是那个味儿，又焦虑又治愈。已经二刷了。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-head"><span class="comment-user">切割术研究员</span><span class="comment-date">2026-11-02</span></div>
+          <p class="comment-text">人生切割术第二季有点慢热，但第九集拉回来了。期待第三季。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-head"><span class="comment-user">废土捡垃圾</span><span class="comment-date">2026-11-01</span></div>
+          <p class="comment-text">辐射第二季比第一季更放得开，尸鬼的台词太有意思了。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-head"><span class="comment-user">罗伊家族旁听生</span><span class="comment-date">2026-10-30</span></div>
+          <p class="comment-text">继承之战衍生剧有消息了，希望别毁经典。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-head"><span class="comment-user">黄石老粉</span><span class="comment-date">2026-10-28</span></div>
+          <p class="comment-text">黄石第五季下半部终于来了，贝丝还是那么猛。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-head"><span class="comment-user">新入坑小白</span><span class="comment-date">2026-10-26</span></div>
+          <p class="comment-text">跟着九九美剧的入门指南看的，确实避开了很多雷剧，推荐。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-head"><span class="comment-user">午夜刷剧党</span><span class="comment-date">2026-10-23</span></div>
+          <p class="comment-text">页面设计挺清爽的，分类找起来方便，就是希望增加播放源筛选。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-head"><span class="comment-user">美剧老饕</span><span class="comment-date">2026-10-20</span></div>
+          <p class="comment-text">九九美剧的深度解析比很多营销号强多了，有内容。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-head"><span class="comment-user">熬夜冠军</span><span class="comment-date">2026-10-18</span></div>
+          <p class="comment-text">更新日历很实用，再也不用自己算时差了。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 相关资讯 -->
+    <section class="section" id="news">
+      <div class="section-header">
+        <h2>📰 相关资讯</h2>
+      </div>
+      <div class="news-grid">
+        <div class="news-card">
+          <div class="news-date">2026-11-07</div>
+          <h3>《最后生还者》第二季收视创新高</h3>
+          <p>HBO宣布该剧第三集直播观看人数突破1200万，成为平台年度收视冠军。制作人透露后续将有更震撼的场面。</p>
+        </div>
+        <div class="news-card">
+          <div class="news-date">2026-11-06</div>
+          <h3>《怪奇物语》最终季分上下部播出</h3>
+          <p>Netflix确认最终季共10集，将分为上下部间隔两周上线。主创表示结局会让粉丝满意。</p>
+        </div>
+        <div class="news-card">
+          <div class="news-date">2026-11-05</div>
+          <h3>《白莲花度假村》第三季确定续订第四季</h3>
+          <p>HBO对该剧表现非常满意，已提前续订第四季，新一季将更换取景地至南法。</p>
+        </div>
+        <div class="news-card">
+          <div class="news-date">2026-11-03</div>
+          <h3>《熊家餐馆》第四季获评论家选择奖提名</h3>
+          <p>该剧获得最佳喜剧类剧集等五项提名，主演杰瑞米·艾伦·怀特再次入围最佳男主角。</p>
+        </div>
+        <div class="news-card">
+          <div class="news-date">2026-11-01</div>
+          <h3>Apple TV+ 宣布《人生切割术》第三季开拍</h3>
+          <p>第三季将探索卢蒙公司之外的切割技术应用，预计2027年底上线。</p>
+        </div>
+        <div class="news-card">
+          <div class="news-date">2026-10-28</div>
+          <h3>《辐射》第二季确认续订第三季</h3>
+          <p>亚马逊在第一季播出后迅速续订，第二季热度持续走高，第三季已进入前期制作。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="/#hero">首页</a>
+        <a href="/#recommend">热门推荐</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#news">资讯</a>
+        <a href="/#comments">评论</a>
+      </div>
+      <p class="copyright">© 2026 九九美剧 · 本站内容仅供推荐参考，请支持正版影视作品。</p>
+      <p class="copyright" style="font-size: 0.75rem;">友情链接：九九美剧社区 | 美剧迷基地 | 剧集日历</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+            </html>
